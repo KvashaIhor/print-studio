@@ -29,4 +29,4 @@ All via `$PY $S/relief.py <mode> ...` (outputs are watertight; verify as usual).
 - Images: high contrast works best; crop to the subject. For lithophanes faces/pets look great; busy
   backgrounds turn into noise: offer to remove the background (TRELLIS's RMBG or a plain crop).
 - SVGs: if the user only has a PNG logo, use `relief --threshold` instead of tracing.
-- Text fonts: build123d's default font; pass `--font "Arial Black"` etc. for bolder text (system fonts).
+- Text fonts: build123d's default font; use `--font "Arial Black"` etc. for bolder text (system fonts).

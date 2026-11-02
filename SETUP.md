@@ -55,9 +55,11 @@ It prints the merged config and which file it read. You can point to another fil
 
 ## 4. Smoke test
 
-From `skills/print-studio`, with `PY=~/print-studio/.venv/bin/python`:
+From `skills/print-studio`, with `PY=~/print-studio/.venv/bin/python`. The first line creates the
+sample inputs (a synthetic picture and figure; they are generated rather than shipped):
 
 ```bash
+$PY evals/files/make_samples.py
 $PY scripts/relief.py lithophane evals/files/sample_picture.png /tmp/ps_test/litho.stl --width 80
 $PY scripts/check_mesh.py /tmp/ps_test/litho.stl
 $PY scripts/render.py sheet /tmp/ps_test/litho.stl /tmp/ps_test/sheet.png

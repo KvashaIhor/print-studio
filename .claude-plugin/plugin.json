@@ -1,6 +1,6 @@
 {
   "name": "print-studio",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Design, generate, modify and verify 3D-printable models for Bambu Lab printers with free, local tools: code CAD, mesh repair, lithophanes and reliefs, local AI image-to-3D, and a check / render / slice gate before every delivery.",
   "author": { "name": "Ihor Kvasha" },
   "homepage": "https://github.com/KvashaIhor/print-studio",

@@ -1,6 +1,6 @@
 {
   "skill_name": "print-studio",
-  "_note": "File paths are relative to this skill's folder. evals/files/ holds synthetic inputs (make_samples.py).",
+  "_note": "File paths are relative to this skill's folder. Create the inputs first: python evals/files/make_samples.py (synthetic picture and figure).",
   "evals": [
     {
       "id": 1,

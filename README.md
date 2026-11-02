@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/media/hero.gif" alt="A Batman figure, a fox on a named base, a wall mount for a TV remote and a back-lit lithophane, all made with print-studio" width="100%">
+  <img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/hero.gif" alt="A Batman figure, a fox on a named base, a wall mount for a TV remote and a back-lit lithophane, all made with print-studio" width="100%">
 </p>
 
 <h1 align="center">print-studio</h1>
@@ -35,7 +35,7 @@ skill's tools, not mock-ups. Print times and weights are Bambu Studio's estimate
 
 ### "Can you make a Batman figurine like the one in this photo?"
 
-<img src="docs/media/batman.png" alt="A clay-style version of the photo, the raw 3D mesh made from it, and the repaired printable figure" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/batman.png" alt="A clay-style version of the photo, the raw 3D mesh made from it, and the repaired printable figure" width="100%">
 
 A local image model re-renders your photo as an unpainted clay sculpture of the same design and
 pose, TRELLIS.2 turns that into a mesh, and the skill repairs it into one printable solid, checking
@@ -44,7 +44,7 @@ layers with supports.
 
 ### "Make me a cute fox figurine, about 80 mm tall."
 
-<img src="docs/media/figure.png" alt="Clay-style reference picture, the raw 3D mesh made from it, and the repaired printable figure" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/figure.png" alt="Clay-style reference picture, the raw 3D mesh made from it, and the repaired printable figure" width="100%">
 
 A local text-to-image model draws a clay-style reference, TRELLIS.2 turns the picture into a mesh on
 your Mac, and the skill repairs it into one watertight solid with a flat base.
@@ -52,7 +52,7 @@ your Mac, and the skill repairs it into one watertight solid with a flat base.
 
 ### "Put my fox on a round base with FOXY on the front and a hole underneath for a 10 × 3 mm magnet."
 
-<img src="docs/media/fox.png" alt="The fox figure, the fox on a base with FOXY, and the same model cut in half to show the magnet pocket" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/fox.png" alt="The fox figure, the fox on a base with FOXY, and the same model cut in half to show the magnet pocket" width="100%">
 
 The base is fused to the figure as one body, the letters follow the curve of the base, and the
 magnet pocket has a cone-shaped roof so it prints without supports.
@@ -60,7 +60,7 @@ magnet pocket has a cone-shaped roof so it prints without supports.
 
 ### "I need a wall mount for my TV remote, 136 × 35 × 9 mm, two M3 screws, drop-in from the top."
 
-<img src="docs/media/holder.png" alt="Wall mount for a TV remote with two countersunk screw holes" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/holder.png" alt="Wall mount for a TV remote with two countersunk screw holes" width="100%">
 
 Code CAD (build123d) with exact dimensions and clearances tuned to your printer: countersunk M3 holes
 so the heads sit flush, a chamfered opening the remote slides into, and a small chamfer on the bed
@@ -69,7 +69,7 @@ edges against elephant's foot. Exported as STEP, STL and 3MF.
 
 ### "Turn this photo into a lithophane, about 90 mm wide."
 
-<img src="docs/media/lithophane.gif" alt="A lithophane of a dog lighting up from behind" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/lithophane.gif" alt="A lithophane of a dog lighting up from behind" width="100%">
 
 Brightness becomes thickness (0.8 to 3.2 mm). The plate stands on its own foot, nothing overhangs
 more than 45°, and you see a back-lit preview before printing. (The dog photo is AI-generated.)
@@ -88,7 +88,7 @@ Nothing is handed over until it passes three gates:
 3. **Slice it.** The Bambu Studio command line slices the model with your printer's presets. You get
    the print time, grams of filament, and where supports actually end up (read from the G-code).
 
-<img src="docs/media/inspection.jpg" alt="Inspection sheet: ten views and two close-ups of a figure on a base" width="100%">
+<img src="https://raw.githubusercontent.com/KvashaIhor/print-studio/media/inspection.jpg" alt="Inspection sheet: ten views and two close-ups of a figure on a base" width="100%">
 
 ## What it can make
 
