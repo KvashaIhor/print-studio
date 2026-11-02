@@ -1,0 +1,10 @@
+# your own config (copy config/printer.example.json to ~/.config/print-studio/printer.json instead)
+skills/print-studio/config/printer.json
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+# job outputs, if you run the skill inside the repo
+work/
+models/
+logs/

@@ -1,0 +1,36 @@
+{
+  "_note": "Copy to ~/.config/print-studio/printer.json and edit. Read by the print-studio skill and every script. Keys you leave out fall back to this file. 'proven' holds values confirmed by your own test prints.",
+
+  "printer": "Bambu Lab P1S",
+  "nozzle_mm": 0.4,
+  "build_volume_mm": [256, 256, 256],
+  "ams": false,
+  "default_colors": 1,
+  "color_note": "Design details as shape, not paint, unless the user asks for multi-colour.",
+  "default_material": "PLA",
+  "layer_height_mm": 0.2,
+  "min_wall_mm": 0.8,
+  "min_feature_mm": 0.6,
+  "clearance_mm": {"press_fit": 0.1, "snug_slide": 0.2, "free_fit": 0.3, "moving_part": 0.4},
+  "hole_allowance_mm": 0.2,
+  "max_overhang_deg": 45,
+  "max_bridge_mm": 10,
+  "supports_default": "tree(auto)",
+
+  "_profiles_note": "Bambu Studio system preset names, exactly as shown in Bambu Studio. Examples for other printers: 'Bambu Lab X1 Carbon 0.4 nozzle', 'Bambu Lab A1 0.4 nozzle', 'Bambu Lab A1 mini 0.4 nozzle'.",
+  "machine_profile": "Bambu Lab P1S 0.4 nozzle",
+  "process_profile": "0.20mm Standard @BBL X1C",
+  "filament_profile": "Bambu PLA Basic @BBL P1S 0.4 nozzle",
+
+  "_paths_note": "workspace: where jobs (work/), deliverables (models/) and logs (logs/) go. python: empty = the interpreter running the scripts. bambu_studio_bin / bambu_profiles_dir: leave empty on macOS (derived from bambu_studio_app); set both on Linux/Windows. trellis_dir: only for the organic route (Apple Silicon).",
+  "workspace": "~/print-studio",
+  "python": "",
+  "blender": "/Applications/Blender.app/Contents/MacOS/Blender",
+  "bambu_studio_app": "/Applications/BambuStudio.app",
+  "bambu_studio_bin": "",
+  "bambu_profiles_dir": "",
+  "trellis_dir": "",
+
+  "proven": {},
+  "defaults_used": ["clearance_mm", "hole_allowance_mm", "min_wall_mm", "max_bridge_mm"]
+}

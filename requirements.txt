@@ -1,0 +1,16 @@
+# Core libraries: every route except AI generation (functional CAD, modify, 2D->3D, repair, checks).
+# Tested with Python 3.12 and the versions in brackets.
+numpy>=2.0,<3                 # [2.5.4]
+scipy>=1.13                   # [1.18.1]
+trimesh>=5.0,<6               # [5.2.0]
+manifold3d>=3.0,<4            # [3.5.4]  exact booleans
+build123d>=0.13,<0.14         # [0.13.0] code CAD (API changes between minor versions)
+libigl>=2.6,<2.7              # [2.6.3]  winding numbers, signed distance, ambient occlusion
+pymeshfix>=0.18,<0.19         # [0.18.1] hole filling
+fast-simplification>=0.2      # [0.2.0]  decimation
+scikit-image>=0.24            # [0.26.0] marching cubes
+matplotlib>=3.9               # [3.11.2] font lookup for text
+pillow>=10                    # [13.0.0]
+networkx>=3                   # [3.7]    trimesh graph ops
+lxml>=5                       # [6.1.3]  3MF export
+rtree>=1.3                    # [1.4.1]  trimesh spatial queries

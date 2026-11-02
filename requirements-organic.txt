@@ -1,0 +1,4 @@
+# Organic route, Apple Silicon only: local text-to-image (Z-Image-Turbo) and photo-to-clay
+# (Qwen-Image-Edit-2511) through MLX. TRELLIS.2 (image-to-3D) has its own environment: see SETUP.md.
+-r requirements.txt
+mflux>=0.24                   # [0.24.0]

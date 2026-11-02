@@ -1,0 +1,12 @@
+{
+  "name": "print-studio",
+  "description": "print-studio: a Claude Code skill for making 3D-printable models end to end with local tools.",
+  "owner": { "name": "Ihor Kvasha" },
+  "plugins": [
+    {
+      "name": "print-studio",
+      "source": ".",
+      "description": "Design, modify and verify 3D-printable models for Bambu Lab printers, with local free tools."
+    }
+  ]
+}

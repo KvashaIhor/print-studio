@@ -1,0 +1,34 @@
+{
+  "skill_name": "print-studio",
+  "_note": "File paths are relative to this skill's folder. evals/files/ holds synthetic inputs (make_samples.py).",
+  "evals": [
+    {
+      "id": 1,
+      "name": "remote-holder",
+      "prompt": "I need a wall-mounted holder for my TV remote. The remote is about 136 x 35 x 9 mm. I want to screw it to the wall with two M3 screws and just drop the remote in from the top. Can you make it?",
+      "expected_output": "A functional CAD part (build123d) with a pocket sized remote+clearance, open top, two M3 clearance/countersunk holes, sensible print orientation; STL+STEP+3MF; check_mesh READY; sliced with time/grams; delivered with dimensions to double-check.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "lithophane",
+      "prompt": "Turn evals/files/sample_picture.png into a lithophane I can put on my windowsill, around 90 mm wide.",
+      "expected_output": "relief.py lithophane ~90 mm wide, upright with foot, watertight; back-lit preview looked at; sliced with supports off, fine layers, 100% infill, white filament advice.",
+      "files": ["evals/files/sample_picture.png"]
+    },
+    {
+      "id": 3,
+      "name": "figure-magnet-base",
+      "prompt": "Take my little figure (evals/files/sample_figure.stl), put it on a round base with SNOW written on the front, and add a hole underneath for a 10x3 mm magnet.",
+      "expected_output": "meshops plinth + text (readable, fused, on the -Y side) + magnet pocket (~10.3 x 3.2) in the bottom; one watertight body; inspected incl. text close-up and the below view; sliced; magnet insertion advice.",
+      "files": ["evals/files/sample_figure.stl"]
+    },
+    {
+      "id": 4,
+      "name": "organic-figurine",
+      "prompt": "Can you make me a figurine of a sitting cat, about 70 mm tall?",
+      "expected_output": "Organic route: grey-clay reference images (several seeds, looked at), TRELLIS 1024 in the background with ETA and tail command, solidify (fails loudly or a complete figure), prep with base cut, inspected incl. face/ears/paws/tail, sliced with tree supports. If trellis_dir is not configured: says so plainly and offers alternatives (an existing model from Printables/MakerWorld + modify route).",
+      "files": []
+    }
+  ]
+}
