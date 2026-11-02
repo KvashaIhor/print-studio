@@ -20,7 +20,6 @@ and record the real exit code. They block until done: start them in the backgrou
 `tail -f` command.
 """
 import argparse
-import os
 import subprocess
 import sys
 import time
@@ -110,10 +109,9 @@ def cmd_to3d(a):
     out.mkdir(parents=True, exist_ok=True)
     stem = out / f"{Path(a.image).stem}_{a.quality}"
     pipe = "1024_cascade" if a.quality == "1024" else "512"
-    env = dict(os.environ, PYTHONUNBUFFERED="1")
     cmd = [TRELLIS / ".venv/bin/python", "-u", "generate.py", str(Path(a.image).resolve()), "--pipeline-type", pipe,
            "--seed", str(a.seed), "--no-texture", "--output", str(stem.resolve())]
-    run_logged(f"trellis_{job_name(out)}_{a.quality}", cmd, cwd=TRELLIS, env=env)
+    run_logged(f"trellis_{job_name(out)}_{a.quality}", cmd, cwd=TRELLIS)  # -u keeps it unbuffered
     print(f"mesh: {stem}.obj (Z-up; next: solidify.py {stem}.obj OUT.stl --up z --height MM)")
 
 
