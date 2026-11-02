@@ -146,6 +146,15 @@ All machine-specific settings live in one JSON file; start from `skills/print-st
 
 Record clearances confirmed by your own test prints under `proven`, so later parts reuse them.
 
+## Network use and your data
+
+Your files, photos and models stay on your machine: the skill has no server and sends none of them
+anywhere. It goes online in two places only:
+- **Hugging Face**: the organic route downloads its models at first use (gated ones with your own
+  Hugging Face token, as set up in SETUP.md).
+- **Web search**: before generating a figure of something with a name, the skill has Claude search
+  sites such as Printables and MakerWorld for an existing model; the query contains the subject name.
+
 ## Third-party models and licences
 
 This repository contains only code and documentation (MIT). The organic route downloads models at first use, under their own licences:
